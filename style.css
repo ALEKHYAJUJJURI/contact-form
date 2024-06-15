@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+}
+.bg-color {
+  background-color: #ffffff;
+  padding: 25px;
+}
+button {
+  background-color: hsl(169, 82%, 27%);
+  border: 0;
+  border-radius: 8px 8px;
+  color: #ffff;
+  padding: 7px;
+  width: 100%;
+}
+.input-error {
+  border-color: hsl(0, 66%, 54%);
+}
+
+.success-card-popup {
+  background-color: hsl(187, 24%, 22%);
+  color: #fff;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.success-msg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+.success-msg img {
+  width: 18px;
+}
+.success-card-popup p {
+  font-size: 13px;
+}
+
+.container-boxx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 7px;
+  align-items: center;
+}
+.query-con {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 4px 4px 4px 14px; /* pending*/
+  justify-content: flex-start;
+  align-items: center;
+}
+input {
+  border: 1px solid;
+  border-radius: 3px;
+}
+input:hover {
+  border-color: hsl(169, 82%, 27%);
+  cursor: pointer;
+}
+label {
+  font-size: 12px;
+}
+@media screen and (max-width: 400px) {
+  .gen-query {
+    margin-top: 10px;
+  }
+  .padding-con {
+    padding-bottom: 6px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .bg-color {
+    width: 450px;
+    height: 500px;
+  }
+  .name-con {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gen-query {
+    margin-top: 0px;
+  }
+  .query-con {
+    width: 50%;
+  }
+  .padding-con {
+    padding-bottom: 6px;
+  }
+}
+/*@media screen and (max-width:400px){
+    
+    .success-card-popup{
+        width: 250px;
+    }
+    .name-con{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+}
+@media screen and (max-width:1440px){
+    .bg-color{
+        width: 450px;
+        height: 500px;
+    }
+    .name-con{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        justify-content: space-between;
+    }
+    .query-con{
+        width: 50%;
+    }
+    .padding-con{
+        padding-bottom: 6px;
+    }
+   
+    .success-card-popup{
+        width: 250px;
+        
+    }
+}
+    */

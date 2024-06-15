@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="d-flex flex-row justify-content-center">
+<div id="successCard" class="success-card-popup d-none">
+  <div class="success-msg">
+    <img src="assets/images/icon-success-check.svg"/>
+    <h6>Message Sent</h6>
+  </div>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+</div>
+<div class="container-boxx">
+  <div class="bg-color mt-5" id="cardContainer">
+    <h6>Contact Us</h6>
+    <form id="submitForm">
+      <div class="name-con">
+    <div class="padding-con">
+      <label for="firstName">First Name *</label>
+      <br>
+      <input type="text" id="firstName" class="w-100"/>
+      
+      <span class="" id="firstNameErrorMsg"></span>
+    </div>
+    <div class="padding-con">
+      <label for="lastName">Last Name *</label><br>
+      <input type="text" id="lastName" class="w-100"/>
+      <span class="" id="lastNameErrorMsg"></span>
+    </div>
+  </div>
+    <div class="padding-con">
+      <label>Email Address *</label><br>
+      <input type="email" id="eMail" class="w-100"/>
+      
+      <span class="" id="requiredEmailErrorMsg"></span>
+    </div>
+    <div class="mb-2 padding-con">
+      <label class="p-2">Query Type</label>
+      <div class="name-con mb-2">
+      <div class="query-con">   <!--pending adding bg-col-->
+        <input type="radio" id="generalQuery" value="General Enquiry" name="QueryType"/>
+        <label for="generalQuery" class="pt-2">General Enquiry</label>
+      </div>
+      <div class="query-con gen-query">
+        <input type="radio" value="Support Request" id="supportQuery" name="QueryType"/>
+        <label for="supportQuery" class="pt-2">Support Request</label>
+      
+      </div>
+    </div>
+      <span class="" id="queryErrorMsg"></span> <!--Please select a query type-->
+    </div>
+    <div>
+      <label>Message *</label><br>
+      <textarea class="w-100" id="message"></textarea>
+      <span class="" id="messageErrorMsg"></span><!--This field is required-->
+    </div>
+    <div class="checkbox-con mb-2 mt-2">
+      <input type="checkbox" id="checkBoxId" class=""/>
+    <!--  <img src="assets/images/icon-checkbox-check.svg" id="checkBoxSuccess" class="d-none"/> -->
+    <label for="checkBoxId" class="pt-1">I consent to being contacted by the team</label><br>
+       </div>
+       <span class="" id="checkBoxIdErrorMsg"></span>
+   <button type="submit" id="button">Submit</button>
+  </form>
+  </div>
+</div>
+  <script src="script.js"></script>
+  </body>
+</body>
+</html>
