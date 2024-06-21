@@ -14,68 +14,67 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="d-flex flex-row justify-content-center">
-<div id="successCard" class="success-card-popup d-none">
-  <div class="success-msg">
-    <img src="assets/images/icon-success-check.svg"/>
+<body style="background-color: hsl(148, 38%, 91%);">
+  
+<div id="successCard" class="d-none mt-3">
+<div class="container-fluid d-flex flex-row justify-content-center align-items-center alert text-white w-50" style="background-color: hsl(187, 24%, 22%);">
+<div class="d-flex flex-column">
+  <div class="d-flex flex-row">
+    <img src="assets/images/icon-success-check.svg" class="mr-2 mb-1"/>
     <h6>Message Sent</h6>
   </div>
-  <p>Thanks for completing the form. We'll be in touch soon!</p>
+  <div>Thanks for completing the form. We'll be in touch soon!</div>
 </div>
 </div>
-<div class="container-boxx">
-  <div class="bg-color mt-5" id="cardContainer">
-    <h6>Contact Us</h6>
-    <form id="submitForm">
-      <div class="name-con">
-    <div class="padding-con name">
-      <label for="firstName">First Name *</label>
-      <br>
-      <input type="text" id="firstName" class="w-100"/>
-      
-      <span class="" id="firstNameErrorMsg"></span>
-    </div>
-    <div class="padding-con name">
-      <label for="lastName ">Last Name *</label><br>
-      <input type="text" id="lastName" class="w-100"/>
-      <span class="" id="lastNameErrorMsg"></span>
-    </div>
-  </div>
-    <div class="padding-con">
-      <label>Email Address *</label><br>
-      <input type="email" id="eMail" class="w-100"/>
-      
-      <span class="" id="requiredEmailErrorMsg"></span>
-    </div>
-    <div class="mb-2 padding-con">
-      <label class="p-2">Query Type</label>
-      <div class="name-con mb-2">
-      <div class="query-con">   <!--pending adding bg-col-->
-        <input type="radio" id="generalQuery" value="General Enquiry" name="QueryType"/>
-        <label for="generalQuery" class="pt-2">General Enquiry</label>
+</div>
+<div class="container" >
+  <div class="row d-flex flex-column justify-content-center align-items-center" id="cardContainer">
+    <form id="submitForm" class="bg-white p-3 rounded rounded-2 m-3">
+      <span class="h4">Contact Us</span>
+      <div class="name-container">
+          <div>
+            <label class="form-text" for="firstName">First Name *</label>
+            <input type="text" id="firstName" class="form-control"/>
+            <div id="firstNameErrorMsg"></div>
+          </div>
+          <div>
+            <label class="form-text" for="lastName">Last Name *</label>
+            <input type="text" id="lastName" class="form-control"/>
+            <div id="lastNameErrorMsg"></div>
+          </div>
       </div>
-      <div class="query-con gen-query">
-        <input type="radio" value="Support Request" id="supportQuery" name="QueryType"/>
-        <label for="supportQuery" class="pt-2">Support Request</label>
-      
+      <div class="">
+        <label class="form-text" for="eMail">Email Address *</label>
+        <input type="email" id="eMail" class="form-control"/>
+        <div id="requiredEmailErrorMsg"></div>
       </div>
-    </div>
-      <span class="" id="queryErrorMsg"></span> <!--Please select a query type-->
-    </div>
-    <div>
-      <label>Message *</label><br>
-      <textarea class="w-100" id="message"></textarea>
-      <span class="" id="messageErrorMsg"></span><!--This field is required-->
-    </div>
-    <div class="checkbox-con mb-2 mt-2">
-      <input type="checkbox" id="checkBoxId" class=""/>
-    <!--  <img src="assets/images/icon-checkbox-check.svg" id="checkBoxSuccess" class="d-none"/> -->
-    <label for="checkBoxId" class="pt-1">I consent to being contacted by the team</label><br>
-       </div>
-       <span class="" id="checkBoxIdErrorMsg"></span>
-   <button type="submit" id="button">Submit</button>
-  </form>
+      
+        <label class="form-text">Query Type *</label>
+        <div class="name-container">
+        <div class="border border-1 d-flex flex-row justify-content-center align-items-center rounded rounded-2 query-padding">
+          <input type="radio" id="generalQuery" value="General Enquiry" name="QueryType"/>
+          <label for="generalQuery" class="m-2">General Enquiry</label>
+        </div>
+        <div class="border border-1 d-flex flex-row justify-content-center align-items-center rounded rounded-2 query-padding">
+          <input type="radio" value="Support Request" id="supportQuery" name="QueryType"/>
+          <label class="m-2" for="supportQuery">Support Request</label>
+        </div>
+       
+      </div>
+      <div id="queryErrorMsg"></div>
+      <div class="d-flex flex-column">
+        <label for="message">Message *</label>
+        <textarea type="text" id="message" rows="3" cols="10" id="tex" class="form-control"></textarea>
+        <div id="messageErrorMsg"></div>
+      </div>
+      <div class="">
+        <input type="checkbox" id="checkBoxId"/>
+        <label for="checkBoxId">I consent to being contacted by the team</label>
+        <div id="checkBoxIdErrorMsg"></div>
+      </div>
+      <div class="d-flex flex-row justify-content-center"><button type="submit" id="button" class="rounded rounded-3 w-100 text-white border" style="background-color:  hsl(169, 82%, 27%);">Submit</button></div>
+    </form>
+
   </div>
 </div>
   <script src="script.js"></script>
