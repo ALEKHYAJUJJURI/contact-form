@@ -29,15 +29,15 @@
 </div>
 <div class="container" >
   <div class="row d-flex flex-column justify-content-center align-items-center" id="cardContainer">
-    <form id="submitForm" class="bg-white p-3 rounded rounded-2 m-3">
+    <form id="submitForm" class="bg-white p-3 rounded rounded-4 m-3">
       <span class="h4">Contact Us</span>
       <div class="name-container">
-          <div>
+          <div class="names">
             <label class="form-text" for="firstName">First Name *</label>
             <input type="text" id="firstName" class="form-control"/>
             <div id="firstNameErrorMsg"></div>
           </div>
-          <div>
+          <div class="names">
             <label class="form-text" for="lastName">Last Name *</label>
             <input type="text" id="lastName" class="form-control"/>
             <div id="lastNameErrorMsg"></div>
@@ -49,7 +49,7 @@
         <div id="requiredEmailErrorMsg"></div>
       </div>
       
-        <label class="form-text">Query Type *</label>
+       <div> <label class="form-text">Query Type *</label></div>
         <div class="name-container">
         <div class="border border-1 d-flex flex-row justify-content-center align-items-center rounded rounded-2 query-padding">
           <input type="radio" id="generalQuery" value="General Enquiry" name="QueryType"/>
