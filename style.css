@@ -25,11 +25,13 @@ input:hover {
   .names{
     width: 50%;
   }
-  form{
-    width:80%;
+  #submitForm{
+    width: 731px;
+    height: 763px;
   }
+  
   form div{
-    margin:5px;
+    margin:15px;
   }
   .name-container{
     display: flex;
@@ -42,8 +44,14 @@ input:hover {
     padding-right: 5px;
     width: 50%;
   }
+ 
+
 }
 @media screen and (width<400px){
+  #submitForm{
+    width: 370px;
+    
+  }
   .name-container{
     display: flex;
     flex-direction: column;
